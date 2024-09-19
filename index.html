@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+       
+        body {
+            background-color: lightgrey;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            text-align: right;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="number"], textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin: 10px 5px;
+            padding: 10px 20px;
+            background-color: #1abc9c;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        button[type="reset"] {
+            background-color: #e74c3c;
+        }
+        h2 {
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            form {
+                width: 80%;
+                padding: 15px;
+            }
+            th {
+                font-size: 14px;
+            }
+            td {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 480px) {
+            form {
+                width: 90%;
+                padding: 10px;
+            }
+            th, td {
+                font-size: 12px;
+            }
+            input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="number"], textarea {
+                padding: 6px;
+            }
+            button {
+                padding: 8px 15px;
+            }
+            button[type="reset"] {
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <center>
+        <table>
+            <tr>
+                <th colspan="2"><h2><u>Registration Form</u></h2></th>
+            </tr>
+            <tr>
+                <th><label for="firstname">First Name</label></th> 
+                <td><input type="text" id="firstname"></td>
+            </tr>
+            <tr>
+                <th><label for="lastname">Last Name</label></th>
+                <td><input type="text" id="lastname"></td>
+            </tr>
+            <tr>
+                <th><label for="nickname">Nick Name</label></th>
+                <td><input type="text" id="nickname"></td>
+            </tr>
+            <tr>
+                <th><label for="email">E-mail ID</label></th>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <th><label for="password">Password</label></th>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <th><label for="dob">Date of Birth</label></th>
+                <td><input type="date" id="dob"></td>
+            </tr>
+            <tr>
+                <th><label>Gender</label></th>
+                <td>
+                    <input type="radio" name="gender" id="male"> Male
+                    <input type="radio" name="gender" id="female"> Female
+                    <input type="radio" name="gender" id="others"> Others
+                </td>
+            </tr>
+            <tr>
+                <th><label for="num">Mobile</label></th>
+                <td><input type="number" id="num"></td>
+            </tr>
+            <tr>
+                <th>Hobbies</th>
+                <td>
+                    <input type="checkbox" id="reading" name="hobbies">
+                    <label for="reading">Reading books</label><br>
+
+                    <input type="checkbox" id="songs" name="hobbies">
+                    <label for="songs">Hearing Songs</label><br>
+
+                    <input type="checkbox" id="dancing" name="hobbies">
+                    <label for="dancing">Dancing</label><br>
+
+                    <input type="checkbox" id="drawing" name="hobbies">
+                    <label for="drawing">Drawing</label><br>
+
+                    <input type="checkbox" id="cooking" name="hobbies">
+                    <label for="cooking">Cooking</label>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="address">Address</label></th>
+                <td><textarea id="address" name="address" rows="4" cols="30"></textarea></td>
+            </tr>
+        </table>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button><br><br>
+        <a href="index0.html">Have an account? login</a>
+        </center>
+    </form>
+
+</body>
+</html>
